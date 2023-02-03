@@ -39,7 +39,6 @@ a {
 a>img {
     width: 24px;
     height: 24px;
-    margin-top: -4px;
     margin-right: 34px;
 }
 
