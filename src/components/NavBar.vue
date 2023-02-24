@@ -1,13 +1,16 @@
 <template>
-    <div id="navbar">
-        <a href="home">Home</a>
-        <a href="shows">Shows</a>
-        <a href="aboutUs">About us</a>
-        <a href="contactUs">Contact us</a>
-        <a href="search">
+    <ul id="navbar">
+        <li><router-link to="/">Home</router-link></li>
+        <li><router-link to="/shows">Shows</router-link></li>
+        <li><router-link to="/about">About us</router-link></li>
+        <li><router-link to="/contact">Contact us</router-link></li>
+        <li id="searchIcone">
+<!--            <router-link to="/search">-->
             <img src="../assets/search.png">
-        </a>
-    </div>
+<!--        </router-link>-->
+        </li>
+
+    </ul>
 </template>
 
 <script>
@@ -27,19 +30,24 @@ export default {
     gap: 45px;
     margin-top: 34px;
     justify-content: flex-end;
+    list-style: none;
 }
 
-a {
+#navbar > li > a {
     color: white;
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
 }
 
-a>img {
+#navbar > li > img {
     width: 24px;
     height: 24px;
     margin-right: 34px;
+}
+
+#searchIcone {
+    margin-right: 30px;
 }
 
 </style>
