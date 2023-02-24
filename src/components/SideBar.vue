@@ -50,6 +50,7 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    text-align: center;
 }
 
 #logo>img {
@@ -74,17 +75,3 @@ export default {
 }
 
 </style>
-
-
-<!--display: flex;-->
-<!--flex-direction: column;-->
-<!--justify-content: center;-->
-<!--align-items: center;-->
-<!--padding: 0px;-->
-<!--gap: 50px;-->
-
-<!--position: absolute;-->
-<!--width: 30px;-->
-<!--height: 430px;-->
-<!--left: 72px;-->
-<!--top: 437px;-->
