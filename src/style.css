@@ -38,17 +38,20 @@ body {
   left: 180px;
 }
 
-.content > h1 {
-  font-size: 3.3em;
-  line-height: 1.1;
-  font-weight: 700;
+.content > .pageContent {
   width: 496px;
-  height: 172px;
   position: absolute;
   top: 126px;
   right: 32px;
   padding: 10px;
-  /*z-index: 1000;*/
+  font-weight: 300;
+}
+
+.content > div > h1 {
+  font-size: 3.3em;
+  line-height: 1.1;
+  font-weight: 700;
+  height: 102px;
 }
 
 h2 {
