@@ -6,7 +6,7 @@
         <li><router-link to="/contact">Contact us</router-link></li>
         <li id="searchIcone">
 <!--            <router-link to="/search">-->
-            <img src="../assets/search.png">
+            <img src="../../assets/search.png">
 <!--        </router-link>-->
         </li>
 

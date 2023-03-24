@@ -6,27 +6,27 @@
 
         <div id="socials">
             <a href="#">
-                <img src="../assets/socials/twitter.png" alt="Twitter">
+                <img src="../../assets/socials/twitter.png" alt="Twitter">
             </a>
 
             <a href="#">
-                <img src="../assets/socials/whatsapp.png" alt="WhatsApp">
+                <img src="../../assets/socials/whatsapp.png" alt="WhatsApp">
             </a>
 
             <a href="#">
-                <img src="../assets/socials/youtube.png" alt="Youtube">
+                <img src="../../assets/socials/youtube.png" alt="Youtube">
             </a>
 
             <a href="#">
-                <img src="../assets/socials/facebook.png" alt="Facebook">
+                <img src="../../assets/socials/facebook.png" alt="Facebook">
             </a>
 
             <a href="#">
-                <img src="../assets/socials/linkedin.png" alt="LinkedIn">
+                <img src="../../assets/socials/linkedin.png" alt="LinkedIn">
             </a>
 
             <a href="#">
-                <img src="../assets/socials/twitter2.png" alt="Twitter">
+                <img src="../../assets/socials/twitter2.png" alt="Twitter">
             </a>
         </div>
 

@@ -30,7 +30,7 @@
         </div>
     </div>
 
-    <img class="inner-event event-image" src="../assets/images/cooking-family.png" alt="Cooking family">
+    <img class="inner-event event-image" src="../../assets/images/cooking-family.png" alt="Cooking family">
 
     <div class="inner-event">
 
