@@ -15,9 +15,9 @@
                     <div class="paragraph">
                         <p>{{ card.description }}</p>
 
-                        <p>
-                            <span v-if="card.likes === 0"><img class="likes" src="public/icons/greyLikes.png" alt="greyLike "></span>
-                            <span v-if="card.likes > 0"><img class="likes" src="public/icons/redLikes.png" alt="redLike "></span>
+                        <p class="likes">
+                            <span v-if="card.likes === 0"><img class="likesHeart" src="public/icons/greyLikes.png" alt="greyLike "></span>
+                            <span v-if="card.likes > 0"><img class="likesHeart" src="public/icons/redLikes.png" alt="redLike "></span>
                             {{ card.likes }}
                         </p>
                     </div>
@@ -178,11 +178,17 @@ export default {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 30px;
 }
 
-img.likes {
+img.likesHeart {
     width: 16px;
     height: 16px;
 }
 
+.likes {
+    display: flex;
+    line-height: 16px;
+    gap: 10px;
+}
 </style>
