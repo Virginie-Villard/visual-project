@@ -12,12 +12,12 @@
 
                     <h2>{{ card.title }}</h2>
 
-                    <div>
+                    <div class="paragraph">
                         <p>{{ card.description }}</p>
 
                         <p>
-<!--                            <span v-if="card.likes === 0"><img src="require(@/assets/icons/greyLikes.png)" alt="greyLike "></span><img src="" alt="">-->
-<!--                            <span v-if="card.likes > 0"><img src="require(@/assets/icons/redLikes.png)" alt="redLike "></span><img src="" alt="">-->
+                            <span v-if="card.likes === 0"><img class="likes" src="public/icons/greyLikes.png" alt="greyLike "></span>
+                            <span v-if="card.likes > 0"><img class="likes" src="public/icons/redLikes.png" alt="redLike "></span>
                             {{ card.likes }}
                         </p>
                     </div>
@@ -152,7 +152,7 @@ export default {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-auto-rows: 1fr;
-    grid-gap: 10px;
+    grid-gap: 30px;
 }
 
 .card {
@@ -172,6 +172,17 @@ export default {
     display: block;
     border-radius: 20px;
     object-fit: cover;
+}
+
+.paragraph {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+img.likes {
+    width: 16px;
+    height: 16px;
 }
 
 </style>
