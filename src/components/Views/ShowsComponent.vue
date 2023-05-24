@@ -9,7 +9,11 @@
                 <div>
 <!--                    <img :src="getImg(card.image)" :alt="card.title">-->
 <!--                    <img :src="getImg" alt="toto">-->
-                    <img src="https://s3-alpha-sig.figma.com/img/e1cb/0093/386bf7ea2f976185c901b44a3a86fcc1?Expires=1685923200&Signature=GuXEZNk4cRer130wbL20iFUrcO436I64dnCtaxrp-tC9AZkSpL-xFKcdhxvwi4c6EtoSJpDn9w0TLpuH7bGSdejRU9g8icC3l-nejsS5txm~anuL-8bvMCLEwIm95wIf2JCIwisbJkMypbJ02vJ1xpEM8hbwLKnH88SA~~YRCIrFl3MId4SW0RJB5XEbZSFrcEYac5dZ73EaNE7T7fENOIktBUI2Zr5BERL~n6m1-HvCm0h7RWAt8BAfq5hG2lPNz-VZrWmiiwp4Ha3eTUzJNGepOJl0kEdokRA7jOA7D1m76zWW30bD7DjA01TYKQVte4o5KutiiIlEZWLi3dw5Qw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="Si même ça ça marche pas, fuck !!!">
+<!--                    <img src="https://s3-alpha-sig.figma.com/img/e1cb/0093/386bf7ea2f976185c901b44a3a86fcc1?Expires=1685923200&Signature=GuXEZNk4cRer130wbL20iFUrcO436I64dnCtaxrp-tC9AZkSpL-xFKcdhxvwi4c6EtoSJpDn9w0TLpuH7bGSdejRU9g8icC3l-nejsS5txm~anuL-8bvMCLEwIm95wIf2JCIwisbJkMypbJ02vJ1xpEM8hbwLKnH88SA~~YRCIrFl3MId4SW0RJB5XEbZSFrcEYac5dZ73EaNE7T7fENOIktBUI2Zr5BERL~n6m1-HvCm0h7RWAt8BAfq5hG2lPNz-VZrWmiiwp4Ha3eTUzJNGepOJl0kEdokRA7jOA7D1m76zWW30bD7DjA01TYKQVte4o5KutiiIlEZWLi3dw5Qw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="Si même ça ça marche pas, fuck !!!">-->
+<!--                    <img :src="require(`@/assets/images/cards/${card.image}`).default" :alt="card.title">-->
+<!--                    <img :src="getImg(card.image)" :alt="card.title">-->
+                    <img :src="card.image" :alt="card.title">
+
 
                     <h2>{{ card.title }}</h2>
 
@@ -40,105 +44,105 @@ export default {
         return {
             cards: [
                 {
-                    image: "image01.jfif",
+                    image: "images/cards/image01.jfif",
                     title: "Head of State",
                     description: "A history show...",
                     likes: 92,
                     routerLink: ""
                 },
                 {
-                    image: "image02.jfif",
+                    image: "images/cards/image02.jfif",
                     title: "Magical Movie Shorts",
                     description: "Short, 'live action'...",
                     likes: 0,
                     routerLink: ""
                 },
                 {
-                    image: "image03.jfif",
+                    image: "images/cards/image03.jfif",
                     title: "Roli Tales",
                     description: "Join Astronaut Roli...",
                     likes: 0,
                     routerLink: ""
                 },
                 {
-                    image: "image04.jfif",
+                    image: "images/cards/image04.jfif",
                     title: "The Story Book",
                     description: "This show is designed...",
                     likes: 0,
                     routerLink: ""
                 },
                 {
-                    image: "image05.png",
+                    image: "images/cards/image05.png",
                     title: "African Animated tales",
                     description: "A history show...",
                     likes: 0,
                     routerLink: ""
                 },
                 {
-                    image: "image06.jfif",
+                    image: "images/cards/image06.jfif",
                     title: "Story Zoo",
                     description: "Join Toby, Baxy and Pepper...",
                     likes: 0,
                     routerLink: ""
                 },
                 {
-                    image: "image07.png",
+                    image: "images/cards/image07.png",
                     title: "Stereo",
                     description: "A show anchored by Kamsi...",
                     likes: 0,
                     routerLink: ""
                 },
                 {
-                    image: "image08.jfif",
+                    image: "images/cards/image08.jfif",
                     title: "Inspire",
                     description: "We discuss with individuals...",
                     likes: 0,
                     routerLink: ""
                 },
                 {
-                    image: "image09.png",
+                    image: "images/cards/image09.png",
                     title: "Playground",
                     description: "A show designed specifically...",
                     likes: 0,
                     routerLink: ""
                 },
                 {
-                    image: "image10.jfif",
+                    image: "images/cards/image10.jfif",
                     title: "When I Grow Up",
                     description: "Join Fatima as she...",
                     likes: 0,
                     routerLink: ""
                 },
                 {
-                    image: "image11.png",
+                    image: "images/cards/image11.png",
                     title: "Blabla",
                     description: "Super Description...",
                     likes: 0,
                     routerLink: ""
                 },
                 {
-                    image: "image12.jfif",
+                    image: "images/cards/image12.jfif",
                     title: "Blabla",
                     description: "Super Description...",
                     likes: 0,
                     routerLink: ""
                 },
                 {
-                    image: "image13.jfif",
+                    image: "images/cards/image13.jfif",
                     title: "Blabla",
                     description: "Super Description...",
                     likes: 0,
                     routerLink: ""
                 },
                 {
-                    image: "image14.jfif",
+                    image: "images/cards/image14.jfif",
                     title: "Blabla",
                     description: "Super Description...",
                     likes: 0,
                     routerLink: ""
                 },
                 {
-                    image: "image15.jfif",
+                    image: "images/cards/image15.jfif",
                     title: "Blabla",
                     description: "Super Description...",
                     likes: 0,
@@ -153,9 +157,19 @@ export default {
         //     // return require(`@/assets/images/cards/${img}`);
         // }
 
-        getImg() {
-            return require("@/assets/images/cards/image01.jfif");
-        }
+        // getImg() {
+        //     return require("@/assets/images/cards/image01.jfif");
+        // }
+
+        // async getImg(img) {
+        //     const imageModule = await import(`@/assets/images/cards/${img}`);
+        //     return imageModule.default;
+        // }
+
+        // getImg(img) {
+        //     const imagePath = require('@/assets/images/cards/' + img);
+        //     return imagePath;
+        // }
     }
 }
 </script>
@@ -169,21 +183,48 @@ export default {
     grid-gap: 10px;
 }
 
+/*.card {*/
+/*    background-color: #181818;*/
+/*    min-width: 250px;*/
+/*    height: 500px;*/
+/*    place-self: center;*/
+/*    justify-self: stretch;*/
+/*    border-radius: 20px;*/
+/*    padding: 20px;*/
+/*}*/
+
+/*.card img {*/
+/*    width: auto;*/
+/*    height: 230px;*/
+/*    overflow-x: hidden;*/
+/*    border-radius: 20px;*/
+/*}*/
+
 .card {
     background-color: #181818;
-    min-width: 250px;
-    height: 500px;
+    width: 90%; /* Redimensionnement à 90% de la largeur de la carte */
+    height: 500px; /* Hauteur fixe de la carte */
     place-self: center;
     justify-self: stretch;
     border-radius: 20px;
     padding: 20px;
+    overflow: hidden; /* Cacher le contenu qui dépasse */
 }
 
+/*.card img {*/
+/*    width: 100%; !* Redimensionnement à 100% de la largeur de l'image *!*/
+/*    height: auto; !* Ajustement automatique de la hauteur en conservant les proportions *!*/
+/*    display: block;*/
+/*    border-radius: 20px;*/
+/*    object-fit: cover; !* Ajustement de l'image pour remplir complètement le conteneur *!*/
+/*}*/
+
 .card img {
-    width: auto;
-    height: 230px;
-    overflow-x: hidden;
+    width: 100%;
+    height: 300px; /* Hauteur fixe pour toutes les images */
+    display: block;
     border-radius: 20px;
+    object-fit: cover;
 }
 
 </style>
