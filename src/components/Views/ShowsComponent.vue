@@ -4,14 +4,9 @@
 
         <div class="list">
             <div class="card" v-for="card in cards">
-                <!--            :key="cards.indexOf(card)"-->
 
                 <div>
-<!--                    <img :src="getImg(card.image)" :alt="card.title">-->
-<!--                    <img :src="getImg" alt="toto">-->
-<!--                    <img src="https://s3-alpha-sig.figma.com/img/e1cb/0093/386bf7ea2f976185c901b44a3a86fcc1?Expires=1685923200&Signature=GuXEZNk4cRer130wbL20iFUrcO436I64dnCtaxrp-tC9AZkSpL-xFKcdhxvwi4c6EtoSJpDn9w0TLpuH7bGSdejRU9g8icC3l-nejsS5txm~anuL-8bvMCLEwIm95wIf2JCIwisbJkMypbJ02vJ1xpEM8hbwLKnH88SA~~YRCIrFl3MId4SW0RJB5XEbZSFrcEYac5dZ73EaNE7T7fENOIktBUI2Zr5BERL~n6m1-HvCm0h7RWAt8BAfq5hG2lPNz-VZrWmiiwp4Ha3eTUzJNGepOJl0kEdokRA7jOA7D1m76zWW30bD7DjA01TYKQVte4o5KutiiIlEZWLi3dw5Qw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="Si même ça ça marche pas, fuck !!!">-->
-<!--                    <img :src="require(`@/assets/images/cards/${card.image}`).default" :alt="card.title">-->
-<!--                    <img :src="getImg(card.image)" :alt="card.title">-->
+
                     <img :src="card.image" :alt="card.title">
 
 
@@ -33,9 +28,6 @@
 </template>
 
 <script>
-
-// import image01 from "@/assets/images/cards/image01.jfif";
-
 
 export default {
     name: "ShowsComponent",
@@ -150,26 +142,6 @@ export default {
                 }
             ]
         }
-    },
-
-    methods: {
-        // getImg(img) {
-        //     // return require(`@/assets/images/cards/${img}`);
-        // }
-
-        // getImg() {
-        //     return require("@/assets/images/cards/image01.jfif");
-        // }
-
-        // async getImg(img) {
-        //     const imageModule = await import(`@/assets/images/cards/${img}`);
-        //     return imageModule.default;
-        // }
-
-        // getImg(img) {
-        //     const imagePath = require('@/assets/images/cards/' + img);
-        //     return imagePath;
-        // }
     }
 }
 </script>
@@ -183,23 +155,6 @@ export default {
     grid-gap: 10px;
 }
 
-/*.card {*/
-/*    background-color: #181818;*/
-/*    min-width: 250px;*/
-/*    height: 500px;*/
-/*    place-self: center;*/
-/*    justify-self: stretch;*/
-/*    border-radius: 20px;*/
-/*    padding: 20px;*/
-/*}*/
-
-/*.card img {*/
-/*    width: auto;*/
-/*    height: 230px;*/
-/*    overflow-x: hidden;*/
-/*    border-radius: 20px;*/
-/*}*/
-
 .card {
     background-color: #181818;
     width: 90%; /* Redimensionnement à 90% de la largeur de la carte */
@@ -210,14 +165,6 @@ export default {
     padding: 20px;
     overflow: hidden; /* Cacher le contenu qui dépasse */
 }
-
-/*.card img {*/
-/*    width: 100%; !* Redimensionnement à 100% de la largeur de l'image *!*/
-/*    height: auto; !* Ajustement automatique de la hauteur en conservant les proportions *!*/
-/*    display: block;*/
-/*    border-radius: 20px;*/
-/*    object-fit: cover; !* Ajustement de l'image pour remplir complètement le conteneur *!*/
-/*}*/
 
 .card img {
     width: 100%;
